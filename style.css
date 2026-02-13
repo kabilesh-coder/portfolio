@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000000;   /* Pure black */
+    color: white;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero span {
+    background: linear-gradient(90deg, #7C8CFF, #9EA8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    margin-top: 15px;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.github-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.github-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.08);
+}
+
+.linkedin-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.linkedin-btn:hover {
+     background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.08);
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 10px;
+    background: linear-gradient(90deg, #7C8CFF, #9EA8FF);
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+.buttons a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.8);
+}
+.project-card {
+    background: rgba(255,255,255,0.06);
+    padding: 18px;
+    margin: 20px auto;
+    width: 55%;              /* Reduced width */
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+    border: 1px solid #9EA8FF;
+}
+.skill-list span {
+    display: inline-block;
+    margin: 12px
+    gap:25px
+    padding: 12px 22px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;   /* 👈 This controls spacing */
+    margin-top: 20px;
+}
+
+.skill-list span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
+    border: 1px solid #9EA8FF;
+}
+
+.typing-text {
+    font-size: 28px;
+    margin-top: 15px;
+    color: #ccc;
+    height: 40px;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #7C8CFF, #9EA8FF);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+
+.resume-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.9);
+}
